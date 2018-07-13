@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
 
   public submit(): void {
     // TODO call the auth service
+    const {email, password} = this.loginForm.value;
     
   }
 
