@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AppRoutingModule } from './app-routing.module';
+import {ReactiveformsModule} from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 
@@ -14,7 +15,8 @@ import { LoginComponent } from './pages/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ReactiveformsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
