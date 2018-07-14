@@ -1,5 +1,16 @@
 <div class="container d-flex justify-content-center align-items-center">
   <div class="form-wrapper text-center">
-    <h2 class>Login</h2>
+    <h2 class="text-center">Login</h2>
+    <form [formGroup]="loginForm" (submit)="submit()" nonvalidate>
+      <div class="form-Group">
+        <input type="email" class="from-control" id="email-input" placeholder="Enter Email" formControlName="email">
+      </div>
+
+      <div class="form-Group">
+        <input type="password" class="from-control" id="password-input" placeholder="Enter password" formControlName="password">
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Submit</button>
+      <small><a routerLink="/signup"> Need an Account?</a></small>
+    </form>
   </div>
 </div>
