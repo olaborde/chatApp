@@ -6,9 +6,9 @@ import { FormBuilder, FormGroup, Validators, Form } from '@angular/forms';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class SignupComponent implements OnInit {
 
-  public loginForm: FormGroup;
+  public signupForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
     this.createForm();
@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   }
 
   private createForm(): void {
-    this.loginForm = this.fb.group({
+    this.signupForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]]
     });
@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
 
   public submit(): void {
     // TODO call the auth service
-    const {email, password} = this.loginForm.value;
+    const {email, password} = this.signupForm.value;
     console.log(`Email: ${email}, Password: ${password}`);
   }
 
