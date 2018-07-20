@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ChatComponent } from './pages/chat/chat.component';
     AppComponent,
     LoginComponent,
     SignupComponent,
-    ChatComponent
+    ChatComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
