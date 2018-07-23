@@ -11,6 +11,7 @@ import { ChatComponent } from './pages/chat/chat.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ChatInputComponent } from './pages/chat/components/chat-input/chat-input.component';
 import { ChatroomListComponent } from './pages/chat/components/chatroom-list/chatroom-list.component';
+import { ChatroomTitleBarComponent } from './pages/chat/components/chatroom-title-bar/chatroom-title-bar.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ChatroomListComponent } from './pages/chat/components/chatroom-list/cha
     ChatComponent,
     NavbarComponent,
     ChatInputComponent,
-    ChatroomListComponent
+    ChatroomListComponent,
+    ChatroomTitleBarComponent
   ],
   imports: [
     BrowserModule,
