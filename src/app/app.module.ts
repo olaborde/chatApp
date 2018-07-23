@@ -9,6 +9,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ChatInputComponent } from './pages/chat/components/chat-input/chat-input.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginComponent,
     SignupComponent,
     ChatComponent,
-    NavbarComponent
+    NavbarComponent,
+    ChatInputComponent
   ],
   imports: [
     BrowserModule,
