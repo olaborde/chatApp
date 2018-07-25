@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chatroom-window.component.scss']
 })
 export class ChatroomWindowComponent implements OnInit {
-
+  public dummyData = [ ];
   constructor() { }
 
   ngOnInit() {
