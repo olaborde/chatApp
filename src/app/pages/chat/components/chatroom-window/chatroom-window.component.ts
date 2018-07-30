@@ -15,6 +15,15 @@ export class ChatroomWindowComponent implements OnInit {
         lastName: 'Smith',
         photoUrl: 'http://via.placeholder.com/150x150'
       }
+    },
+    {
+      message: 'Where is my pizza',
+      createdAt: new Date(),
+      sender: {
+        firstName: 'Joseph',
+        lastName: 'Smith',
+        photoUrl: 'http://via.placeholder.com/150x150'
+      }
     }
    ];
   constructor() { }
