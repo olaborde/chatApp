@@ -3,7 +3,7 @@ export class User {
   lastName: string;
   photoUrls: string;
 
-  constructor({firstName, lastName, photoUrls}){
+  constructor({firstName, lastName, photoUrls}) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.photoUrls = photoUrls;
