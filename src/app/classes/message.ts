@@ -9,7 +9,8 @@ export class Message {
   constructor({message, createdAt, sender}) {
     this.message = message;
     this.createdAt = createdAt;
-    this.sender = sender;
+    // this.sender = sender;
+    this.sender = new User(sender)
 
   }
 }
