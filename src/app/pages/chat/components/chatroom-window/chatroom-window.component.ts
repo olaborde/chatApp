@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chatroom-window.component.scss']
 })
 export class ChatroomWindowComponent implements OnInit {
+  // TODO replace with Firebase data
   public dummyData = [
     {
       message: 'la lal alala',
