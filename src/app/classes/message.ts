@@ -10,7 +10,7 @@ export class Message {
     this.message = message;
     this.createdAt = createdAt;
     // this.sender = sender;
-    this.sender = new User(sender)
+    this.sender = new User(sender);
 
   }
 }
